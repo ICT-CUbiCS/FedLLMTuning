@@ -1,0 +1,23 @@
+
+__pycache__/
+output/
+jupyterlab/
+.vscode/
+saves/
+evaluate_metrics/
+logs/
+clm_output/
+
+*.txt
+metrics_container.json
+
+e2e/
+*bat/
+explore/
+
+local_data/
+fl_output/
+
+*.csv
+
+# e2e_metrics/

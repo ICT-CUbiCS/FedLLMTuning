@@ -1,0 +1,167 @@
+{
+    "cola": {
+        "per_device_train_batch_size": 32,
+        "gradient_accumulation_steps": 4,
+        "learning_rate": 4e-4,
+        "num_train_epochs": 20,
+        "evaluation_strategy": "epoch",
+        "save_strategy": "epoch",
+        "save_total_limit": 1,
+        "warmup_ratio": 0.06,
+        "logging_strategy": "steps",
+        "logging_steps": 10
+    },
+    "mnli": {
+        "per_device_train_batch_size": 32,
+        "gradient_accumulation_steps": 4,
+        "learning_rate": 5e-4,
+        "num_train_epochs": 15,
+        "evaluation_strategy": "epoch",
+        "save_strategy": "epoch",
+        "save_total_limit": 1,
+        "warmup_ratio": 0.06,
+        "logging_strategy": "steps",
+        "logging_steps": 10
+    },
+    "mrpc": {
+        "per_device_train_batch_size": 32,
+        "gradient_accumulation_steps": 4,
+        "learning_rate": 4e-4,
+        "num_train_epochs": 15,
+        "evaluation_strategy": "epoch",
+        "save_strategy": "epoch",
+        "save_total_limit": 1,
+        "warmup_ratio": 0.06,
+        "logging_strategy": "steps",
+        "logging_steps": 10
+    },
+    "qnli": {
+        "per_device_train_batch_size": 32,
+        "gradient_accumulation_steps": 4,
+        "learning_rate": 4e-4,
+        "num_train_epochs": 30,
+        "evaluation_strategy": "epoch",
+        "save_strategy": "epoch",
+        "save_total_limit": 1,
+        "warmup_ratio": 0.06,
+        "logging_strategy": "steps",
+        "logging_steps": 10
+    },
+    "qqp": {
+        "per_device_train_batch_size": 32,
+        "gradient_accumulation_steps": 4,
+        "learning_rate": 5e-4,
+        "num_train_epochs": 30,
+        "evaluation_strategy": "epoch",
+        "save_strategy": "epoch",
+        "save_total_limit": 1,
+        "warmup_ratio": 0.06,
+        "logging_strategy": "steps",
+        "logging_steps": 10
+    },
+    "rte": {
+        "per_device_train_batch_size": 32,
+        "gradient_accumulation_steps": 4,
+        "learning_rate": 5e-4,
+        "num_train_epochs": 30,
+        "evaluation_strategy": "epoch",
+        "save_strategy": "epoch",
+        "save_total_limit": 1,
+        "warmup_ratio": 0.06,
+        "logging_strategy": "steps",
+        "logging_steps": 10
+    },
+    "sst2": {
+        "per_device_train_batch_size": 32,
+        "gradient_accumulation_steps": 4,
+        "learning_rate": 5e-4,
+        "num_train_epochs": 30,
+        "evaluation_strategy": "epoch",
+        "save_strategy": "epoch",
+        "save_total_limit": 1,
+        "warmup_ratio": 0.06,
+        "logging_strategy": "steps",
+        "logging_steps": 10
+    },
+    "stsb": {
+        "per_device_train_batch_size": 32,
+        "gradient_accumulation_steps": 4,
+        "learning_rate": 4e-4,
+        "num_train_epochs": 20,
+        "evaluation_strategy": "epoch",
+        "save_strategy": "epoch",
+        "save_total_limit": 1,
+        "warmup_ratio": 0.06,
+        "logging_strategy": "steps",
+        "logging_steps": 10
+    },
+    "e2e_nlg": {
+        "gpt2-medium": {
+            "per_device_train_batch_size": 12, "gradient_accumulation_steps": 4,
+            "learning_rate": 2e-4, "weight_decay": 0.01, 
+            "num_train_epochs": 5, "warmup_ratio": 0.1,
+            "save_total_limit": 1,
+            "logging_steps": 10,
+            "save_strategy": "epoch",
+            "evaluation_strategy": "epoch"
+        },
+        "gpt2-large": {
+            "per_device_train_batch_size": 6, "gradient_accumulation_steps": 3,
+            "learning_rate": 2e-4, "weight_decay": 0.01, 
+            "num_train_epochs": 5, "warmup_ratio": 0.1,
+            "save_total_limit": 1,
+            "logging_steps": 10,
+            "save_strategy": "epoch",
+            "evaluation_strategy": "epoch"
+        },
+        "llama2-7b": {
+            "per_device_train_batch_size": 4, "gradient_accumulation_steps": 4,
+            "learning_rate": 2e-4, "weight_decay": 0.01, 
+            "optim": "paged_adamw_32bit", "lr_scheduler_type": "constant",
+            "num_train_epochs": 5, "warmup_ratio": 0.03,
+            "save_total_limit": 1, "fp16": true, "max_grad_norm": 0.3,
+            "logging_steps": 10,
+            "save_strategy": "epoch",
+            "evaluation_strategy": "epoch"
+        },
+        "Sheared-LLaMA-2.7B": {
+            "per_device_train_batch_size": 4, "gradient_accumulation_steps": 4,
+            "learning_rate": 2e-4, "weight_decay": 0.01, 
+            "optim": "paged_adamw_32bit", "lr_scheduler_type": "constant",
+            "num_train_epochs": 5, "warmup_ratio": 0.03,
+            "save_total_limit": 1, "fp16": true, "max_grad_norm": 0.3,
+            "logging_steps": 10,
+            "save_strategy": "epoch",
+            "evaluation_strategy": "epoch"
+        },
+	"Sheared-LLaMA-1.3B": {
+            "per_device_train_batch_size": 4, "gradient_accumulation_steps": 4,
+            "learning_rate": 2e-4, "weight_decay": 0.01,
+            "optim": "paged_adamw_32bit", "lr_scheduler_type": "constant",
+            "num_train_epochs": 5, "warmup_ratio": 0.03,
+            "save_total_limit": 1, "fp16": true, "max_grad_norm": 0.3,
+            "logging_steps": 10,
+            "save_strategy": "epoch",
+            "evaluation_strategy": "epoch"
+        },
+        "LLMPruner": {
+            "per_device_train_batch_size": 4, "gradient_accumulation_steps": 4,
+            "learning_rate": 2e-4, "fp16": true,
+            "optim": "paged_adamw_32bit", "lr_scheduler_type": "constant",
+            "num_train_epochs": 5, "warmup_ratio": 0.03,
+            "save_total_limit": 1, "max_grad_norm": 0.3,
+            "logging_steps": 10,
+            "save_strategy": "epoch",
+            "evaluation_strategy": "epoch"
+        },
+        "ChildTuning": {
+            "per_device_train_batch_size": 2, "gradient_accumulation_steps": 2,
+            "learning_rate": 2e-4, "weight_decay": 0.01, 
+            "num_train_epochs": 5, "warmup_ratio": 0.03,
+            "save_total_limit": 1, "max_grad_norm": 0.3,
+            "logging_steps": 10,
+            "save_strategy": "epoch",
+            "evaluation_strategy": "epoch"
+        }
+    }
+}
